@@ -17,7 +17,7 @@ import java.util.concurrent.Semaphore;
  **/
 public class T11_TestSemaphore {
     public static void main(String[] args) {
-        Semaphore s = new Semaphore(1);
+        Semaphore s = new Semaphore(1);//还可以加一个参数fair（true/false）公平非公平，还是要看内部的队列，实际并不是完全准，都是用AQS
         //信号量，上面是允许一个线程同时执行
         new Thread(()->{
             try {
@@ -36,9 +36,9 @@ public class T11_TestSemaphore {
 
             try {
                 s.acquire();
-                System.out.println("t2 running");
+                System.out.println("T2 running");
                 Thread.sleep(200);
-                System.out.println("t2 running");
+                System.out.println("T2 running");
                 s.release();
             } catch (InterruptedException e) {
                 e.printStackTrace();

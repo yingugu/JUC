@@ -15,7 +15,7 @@ import java.util.concurrent.Semaphore;
  * @author : yinping
  * @date : 2020-04-08 14:46
  **/
-public class T11_TestSemaphore {
+public class  T11_TestSemaphore {
     public static void main(String[] args) {
         Semaphore s = new Semaphore(1);//还可以加一个参数fair（true/false）公平非公平，还是要看内部的队列，实际并不是完全准，都是用AQS
         //信号量，上面是允许一个线程同时执行

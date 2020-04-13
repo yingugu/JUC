@@ -13,6 +13,7 @@ import java.io.IOException;
  * @date : 2020-04-12 14:24
  **/
 public class ResourceMgr {
+    //TODO 可以将此类改成单例
     public static BufferedImage goodTankL,goodTankU,goodTankR,goodTankD;
     public static BufferedImage badTankL,badTankU,badTankR,badTankD;
     public static BufferedImage bulletL,bulletR,bulletD,bulletU;

@@ -12,17 +12,17 @@ import java.util.Random;
  * @date : 2020-04-11 22:56
  **/
 public class Tank {
-    private int x, y;
-    private Dir dir = Dir.DOWN;
+    int x, y;
+    Dir dir = Dir.DOWN;
     private static final int SPEED = 5;
     private boolean moving = true;
     Rectangle rect = new Rectangle();
     private Random random = new Random();
     public static int WIDTH = ResourceMgr.goodTankD.getWidth();
     public static int HEIGHT = ResourceMgr.goodTankD.getHeight();
-    private Group group = Group.BAD;
+    Group group = Group.BAD;
 
-    private TankFrame tf = null;
+    TankFrame tf = null;
     private boolean living = true;
 
     public Group getGroup() {
@@ -144,11 +144,11 @@ public class Tank {
         return SPEED;
     }
 
-    public void fire() {
+    public void fire(/*FireStrategy fireStrategy*/) {
 
-        int bX = this.x + (Tank.WIDTH  - Bullet.WIDTH) /2;
-        int bY = this.y + (Tank.HEIGHT - Bullet.HEIGHT )/2;
-        tf.bullets.add(new Bullet(bX, bY, this.dir, this.group, this.tf));
+
+
+
     }
 
     public void die() {

@@ -29,12 +29,12 @@ public class Main {
         });*/
        TankFrame tf = new TankFrame();
 
-       int iniTankCount = Integer.parseInt((String)PropertyMgr.get("iniTankCount"));
+//       int iniTankCount = Integer.parseInt((String)PropertyMgr.get("iniTankCount"));
         /*PropertiesUtil propertiesUtil = new PropertiesUtil();
         int iniTankCount = Integer.parseInt((String) propertiesUtil.getInitTankCount());*/
 
        //初始化敌方坦克
-        for (int i = 0; i < iniTankCount; i++) {
+        for (int i = 0; i < 10; i++) {
              tf.tanks.add(new Tank(50+i*80,200,Dir.DOWN,Group.BAD, tf));
         }
        while(true){

@@ -7,6 +7,7 @@ package com.yinping.study.tank;
  * <p>默认的开火，策略模式</p>
  * @date : 2020-04-13 17:20
  **/
+//TODO:做成单例
 public class DefaultFireStrategy implements FireStrategy {
     @Override
     public void fire(Tank t) {

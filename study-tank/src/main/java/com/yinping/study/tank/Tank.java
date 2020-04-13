@@ -22,6 +22,8 @@ public class Tank {
     public static int HEIGHT = ResourceMgr.goodTankD.getHeight();
     Group group = Group.BAD;
 
+    FireStrategy fireStrategy;
+
     TankFrame tf = null;
     private boolean living = true;
 
@@ -43,6 +45,7 @@ public class Tank {
         rect.y = this.y;
         rect.width = this.WIDTH;
         rect.height = this.HEIGHT;
+        if (group == Group.GOOD) fireStrategy = new FourDirFireStrategy();
     }
 
     public void paint(Graphics g) {
@@ -146,7 +149,7 @@ public class Tank {
 
     public void fire(/*FireStrategy fireStrategy*/) {
 
-
+        fireStrategy.fire(this);
 
 
     }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="study-designpatterns" />
+        <module name="study-thread" />
+        <module name="study-structure" />
+        <module name="study-tank" />
+        <module name="study-tank01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="HelloSpring.main" target="1.8" />
+      <module name="HelloSpring.test" target="1.8" />
+      <module name="study-tank-01" target="1.5" />
+      <module name="study-tank01" target="1.5" />
+      <module name="studytank01" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="study-designpatterns" options="-parameters" />
+      <module name="study-structure" options="-parameters" />
+      <module name="study-tank" options="-parameters" />
+      <module name="study-thread" options="-parameters" />
+    </option>
+  </component>
+</project>
